@@ -1,0 +1,43 @@
+\begin{tikzpicture}[->,>=latex,auto,node distance=2.8cm,very thick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black,very thick]
+
+  \node[state] at ( 0.0, 0.0) (A) {};
+  \node[state] at ( 1.8, 2.0) (B) {};
+  \node[state] at ( 2.0, 0.0) (C) {};
+  \node[state] at ( 2.1,-2.0) (D) {};
+  \node[state] at ( 3.8, 1.5) (E) {};
+  \node[state] at ( 4.3,-1.0) (F) {};
+  \node[state] at ( 6.0, 1.8) (G) {};
+  \node[state] at ( 6.5, 0.2) (H) {};
+  \node[state] at ( 6.4,-1.8) (I) {};
+  \node[state] at ( 8.2, 1.7) (J) {};
+  \node[state] at ( 8.2,-0.7) (K) {};
+  \node[state] at (10.0, 2.0) (L) {};
+  \node[state] at (10.1, 0.2) (M) {};
+  \node[state] at (12.0,-1.5) (N) {};
+  \node[state] at (12.2, 1.0) (O) {};
+  \node[state] at (14.0,-0.5) (P) {};
+  \node[state] at (14.1, 1.1) (Q) {};
+
+  \path (B) edge (A)
+        (C) edge (A)
+        (D) edge (A)
+        (E) edge (B)
+        (E) edge (C)        
+        (F) edge (D)
+        (G) edge (E)
+        (H) edge (F)
+        (I) edge (F)
+        (J) edge (G)
+        (K) edge (H)
+        (K) edge (I)
+        (L) edge (J)
+        (M) edge (J)
+        (M) edge (K)
+        (O) edge (L)
+        (O) edge (M)
+        (N) edge (K)
+        (P) edge (O)
+        (P) edge (N)
+        (Q) edge (O);
+\end{tikzpicture}
